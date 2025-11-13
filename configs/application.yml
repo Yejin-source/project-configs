@@ -1,3 +1,8 @@
+Spring:
+  cloud:
+    loadbalancer:
+      ribbon:
+        enabled: false # Netflix Ribbon 대신 Spring Cloud LoadBalancer 사용
 
 management:
   endpoints:
