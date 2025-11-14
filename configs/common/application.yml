@@ -82,10 +82,10 @@ resilience4j:
   bulkhead: # 벌크헤드 설정 (동시 호출 제한)
     configs:
       default: # 기본 벌크헤드 설정
-      type: THREADPOOL  # 스레드풀 타입 벌크헤드 사용 (SEMAPHORE 대신)
-      coreThreadPoolSize: 5  # 스레드풀의 기본 스레드 수 (항상 활성 상태로 유지)
-      maxThreadPoolSize: 10  # 스레드풀의 최대 스레드 수 (부하 증가 시 확장)
-      queueCapacity: 50  # 모든 스레드가 사용 중일 때 대기할 수 있는 요청 수
+        type: THREADPOOL  # 스레드풀 타입 벌크헤드 사용 (SEMAPHORE 대신)
+        coreThreadPoolSize: 5  # 스레드풀의 기본 스레드 수 (항상 활성 상태로 유지)
+        maxThreadPoolSize: 10  # 스레드풀의 최대 스레드 수 (부하 증가 시 확장)
+        queueCapacity: 50  # 모든 스레드가 사용 중일 때 대기할 수 있는 요청 수
 
   ratelimiter: # 속도 제한 설정
     configs:
